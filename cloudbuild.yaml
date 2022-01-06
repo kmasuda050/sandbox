@@ -1,0 +1,6 @@
+steps:
+- id: 'build_api_image'
+  name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-f', 'Dockerfile',
+                  '-t', 'asia.gcr.io/gcb-test-262612/bot:abc',
+                  '.']
