@@ -10,5 +10,6 @@ jobs:
     steps:
     - name: test
       run: |
+        which curl
         curl
 
