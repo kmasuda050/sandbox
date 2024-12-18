@@ -10,6 +10,7 @@ jobs:
     steps:
     - name: test
       run: |
+        echo $SHELL
+        env
         which curl
-        curl
 
