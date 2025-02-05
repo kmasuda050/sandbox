@@ -12,5 +12,5 @@ jobs:
       run: |
         echo $SHELL
         env
-        which curl
-
+        $test = [System.Environment]::UserName
+        Write-Host "$test"
