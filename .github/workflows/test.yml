@@ -5,12 +5,12 @@ on:
 
 jobs:
   test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: test
-      run: |
-        echo $SHELL
-        env
-        $test = [System.Environment]::UserName
-        Write-Host "$test"
+      uses: kmasuda050/setup-python@feature/python-version-required
+    - name: test
+      uses: kmasuda050/setup-python@feature/python-version-required
+      env:
+        PYTHON_VERSION_REQUIRED: true
