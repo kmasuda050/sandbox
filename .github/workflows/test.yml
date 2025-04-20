@@ -9,8 +9,8 @@ jobs:
 
     steps:
     - name: test
-      uses: kmasuda050/setup-python@feature/python-version-required
+      uses: kmasuda050/setup-python@test
     - name: test
-      uses: kmasuda050/setup-python@feature/python-version-required
+      uses: kmasuda050/setup-python@test
       env:
         PYTHON_VERSION_REQUIRED: true
